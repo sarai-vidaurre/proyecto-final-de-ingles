@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e6defa; /* fondo lavanda claro */
+  overflow: hidden;
+}
+
+.ring {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #b19cd9;
+  transition: 0.5s;
+}
+
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+
+.ring i:nth-child(3) {
+  border-radius: 50%;
+  animation: animate2 10s linear infinite;
+}
+
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+
+@keyframes animate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes animate2 {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.login {
+  position: absolute;
+  width: 300px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(177, 156, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.login h2 {
+  font-size: 2em;
+  color: #5a3e8a; /* morado profundo */
+}
+
+.login .inputBx {
+  width: 100%;
+}
+
+.login .inputBx input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #b19cd9;
+  border-radius: 40px;
+  background: transparent;
+  font-size: 1em;
+  color: #333;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login .inputBx input:focus {
+  border-color: #5a3e8a;
+  box-shadow: 0 0 5px #b19cd9;
+}
+
+.login .inputBx input[type="submit"] {
+  background: linear-gradient(45deg, #b19cd9, #a684c5);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.login .inputBx input[type="submit"]:hover {
+  background: linear-gradient(45deg, #a684c5, #5a3e8a);
+}
+
+.login .inputBx input::placeholder {
+  color: #999;
+}
+
+.login .links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.login .links a {
+  color: #5a3e8a;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+/* NUEVO BLOQUE AÑADIDO */
+.extra-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.extra-buttons button {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(45deg, #d3c1f0, #a684c5);
+  color: white;
+  font-weight: bold;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.extra-buttons button:hover {
+  background: linear-gradient(45deg, #a684c5, #5a3e8a);
+  transform: scale(1.03);
+}
+
+
+
+
+
+
+
+
+

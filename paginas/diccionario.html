@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diccionario</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="diccionario.css" />
+</head>
+<body>
+  <header>
+    <div class="menu-icono" onclick="toggleMenu()">☰</div>
+    <h1>Aprende Inglés Básico</h1>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#" onclick="mostrarPopup('gramatica')">Gramática</a></li>
+        <li><a href="#" onclick="mostrarPopup('speaking')">Speaking & Listening</a></li>
+        <li><a href="#" onclick="mostrarPopup('practica')">Práctica</a></li>
+        <li>
+          <input type="text" id="busqueda" placeholder="Buscar palabra..." oninput="buscarPalabra()">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="diccionario-main">
+      <div class="diccionario-cuadro" id="cuadroPalabra">
+        <img id="imagenPalabra" src="" alt="Imagen" />
+        <h3 id="palabra"></h3>
+        <p id="pronunciacion"></p>
+        <p id="significado"></p>  
+        <p id="uso"></p>
+        <p id="uso_espanol"></p>
+      </div>
+
+    <div class="botones-navegacion">
+      <button onclick="anteriorPalabra()">← Anterior</button>
+      <button onclick="siguientePalabra()">Siguiente →</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">contacto@inglesfacil.com</a></p>
+  </footer>
+
+  <script src="diccionario.js" defer></script>
+</body>
+</html>

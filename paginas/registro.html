@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crear cuenta AlexDev</title>
+  <link rel="stylesheet" href="../paginas/inicio.css" />
+</head>
+<body>
+  <div class="ring">
+    <i style="--clr:#b19cd9;"></i>
+    <i style="--clr:#a684c5;"></i>
+    <i style="--clr:#5a3e8a;"></i>
+    <div class="login">
+      <h2>Crear cuenta</h2>
+      <form id="registerForm">
+        <div class="inputBx">
+          <input type="text" id="nombre" placeholder="Nombre completo" required />
+        </div>
+        <div class="inputBx">
+          <input type="email" id="email" placeholder="Correo electrónico" required />
+        </div>
+        <div class="inputBx">
+          <input type="email" id="email2" placeholder="Repetir correo electrónico" required />
+        </div>
+        <div class="inputBx">
+          <input type="password" id="password" placeholder="Contraseña" required />
+        </div>
+        <div class="inputBx">
+          <input type="submit" value="Crear cuenta" />
+        </div>
+      </form>
+      <div class="links">
+        <a href="inicio.html">Volver al login</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+  // Importar Firebase
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword, updateProfile } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
+
+  // Configuración de Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyAksJNLn61IYZxg9-p0wfSZG5UFm5edQ-A",
+    authDomain: "mi-login-app-ddfb4.firebaseapp.com",
+    projectId: "mi-login-app-ddfb4",
+    storageBucket: "mi-login-app-ddfb4.appspot.com",
+    messagingSenderId: "726872992756",
+    appId: "1:726872992756:web:37be9522df5184c4aca7a1",
+    measurementId: "G-VRB0FZFMSQ"
+  };
+
+  // Inicializar Firebase
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  // Obtener el formulario
+  const registerForm = document.getElementById('registerForm');
+  registerForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Obtener valores del formulario
+    const nombre = document.getElementById('nombre').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const email2 = document.getElementById('email2').value.trim();
+    const password = document.getElementById('password').value;
+
+    // Validar correos iguales
+    if (email !== email2) {
+      alert('Los correos electrónicos no coinciden');
+      return;
+    }
+
+    try {
+      // Crear usuario
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+
+      // Actualizar el perfil con el nombre
+      await updateProfile(userCredential.user, {
+        displayName: nombre
+      });
+
+      alert('Cuenta creada exitosamente');
+
+      // Redirigir al inicio
+      window.location.href = 'inicio.html';
+    } catch (error) {
+      alert('Error al crear la cuenta: ' + error.message);
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Talky Talky</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+
+
+
+
+
+
+<div id="pantalla-bienvenida">
+  <div class="contenido-bienvenida" style="text-align: center;">
+    <h2 style="font-size: 2em; margin-bottom: 0.2em;">Talky Talky</h2>
+    <p style="font-size: 1.1em; margin: 0.2em 0 1em;">Tu espacio para aprender inglés básico</p>
+    <p style="font-size: 1em;">¡Bienvenido, <span id="nombre-usuario">Usuario</span>!</p>
+    
+    <!-- Aquí colocamos la bolita giratoria debajo -->
+    <div id="loader" style="margin-top: 1.5em;">
+      <div class="loader"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+
+
+  <header>
+    <div class="menu-icono" onclick="toggleMenu()">☰</div>
+    <h1>Talky Talky</h1>
+    <p> </p>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a href="#" onclick="mostrarPopup('gramatica')">Gramática</a></li>
+        <li><a href="#" onclick="mostrarPopup('speaking')">Speaking & Listening</a></li>
+        <li><a href="#" onclick="mostrarPopup('practica')">Práctica</a></li>
+        <li><a href="#" onclick="mostrarPopup('diccionario')">Diccionario</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Ventana deslizante lateral -->
+  <div id="ventana-deslizante" class="ventana-deslizante cerrando">
+    <h2>¿Necesitas ayuda?</h2>
+    <p>Bienvenido a pagina de inglés básico.</p>
+    <p>¡Buena suerte!</p>
+    <p>📖 🌍 📚</p>
+    <p>.</p>
+    <p>.</p>
+    <p>This page is a prototype.
+It is part of a trial for our final project, which still needs many modifications, adjustments, content, designs, and themes. We know there are repetitive elements and areas to improve, but our project will continue to grow if we receive a good grade.</p>
+<p>Esta página es un prototipo.
+Forma parte de una prueba para el proyecto final, el cual aún requiere muchas modificaciones, arreglos, palabras, diseños y temas. Sabemos que hay aspectos repetitivos o por mejorar, pero nuestro proyecto seguirá evolucionando si obtenemos una buena calificación.</p>
+<h2>100/100</h2>
+  </div>
+  <!-- Cuadro de contenido dinámico -->
+  <div id="popup-contenido" class="popup">
+    <div class="popup-inner">
+      <button class="cerrar-popup" onclick="cerrarPopup()">X</button>
+      <div id="contenido-dinamico"></div>
+    </div>
+  </div>
+
+
+
+<div class="decoracion-iconos">
+  <span>ABC</span>
+  <span>🖊</span>
+  <span>✏️</span>
+  <span>📚</span>
+  <span>Book</span>
+  <span>✏</span>
+  <span>Ready??</span>
+  <span>📝</span>
+</div>
+
+
+
+
+
+
+
+
+<main>
+  <section class="bienvenida-card">
+    <div class="bienvenida" id="bienvenida-box">
+      <h2 id="titulo">¡Bienvenido!</h2>
+      <p id="mensaje">Empieza a aprender inglés desde lo más básico. Usa las secciones para explorar contenido útil.</p>
+    </div>
+  </section>
+</main>
+
+
+
+
+<script>
+  const caja = document.getElementById('bienvenida-box');
+  const titulo = document.getElementById('titulo');
+  const mensaje = document.getElementById('mensaje');
+
+  let enIngles = false;
+
+  caja.addEventListener('click', () => {
+    // Reiniciar animación
+    caja.classList.remove('jello-horizontal');
+    void caja.offsetWidth;
+    caja.classList.add('jello-horizontal');
+
+    // Cambiar texto después de 0.9s (cuando termina la animación)
+    setTimeout(() => {
+      if (!enIngles) {
+        titulo.innerText = 'Welcome!';
+        mensaje.innerText = 'Start learning English from the basics. Use the sections to explore useful content.';
+        enIngles = true;
+      } else {
+        titulo.innerText = '¡Bienvenido!';
+        mensaje.innerText = 'Empieza a aprender inglés desde lo más básico. Usa las secciones para explorar contenido útil.';
+        enIngles = false;
+      }
+    }, 300);
+  });
+  
+</script>
+
+
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAksJNLn61IYZxg9-p0wfSZG5UFm5edQ-A",
+    authDomain: "mi-login-app-ddfb4.firebaseapp.com",
+    projectId: "mi-login-app-ddfb4",
+    storageBucket: "mi-login-app-ddfb4.appspot.com",
+    messagingSenderId: "726872992756",
+    appId: "1:726872992756:web:37be9522df5184c4aca7a1",
+    measurementId: "G-VRB0FZFMSQ"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const nombre = user.displayName || 'Usuario';
+      const nombreElemento = document.getElementById('nombre-usuario');
+      if (nombreElemento) {
+        nombreElemento.textContent = nombre;
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

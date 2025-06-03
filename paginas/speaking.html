@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Greetings and Grammar Practice</title>
+  <link rel="stylesheet" href="../paginas/speaking.css">
+</head>
+<body>
+
+
+     <header>
+    <h1>Talky Talky</h1>
+    <nav class="nav-links">
+      <button onclick="toggleLessons()">Gramática</button>
+      <a href="index.html"><button>Menú</button></a>
+    </nav>
+
+    <div id="lessonsDropdown" class="dropdown" style="display: none;">
+      <h3>Gramática - Temas</h3>
+      <a href="lesson1.html">Lección 1: Saludos y Despedidas</a>
+      <a href="lesson2.html">Lección 2: Presentarte</a>
+      <a href="lesson3.html">Lección 3: El Verbo "To Be"</a>
+      <a href="lesson4.html">Lección 4: Pronombres Personales</a>
+      <a href="lesson5.html">Lección 5: Adjetivos Posesivos</a>
+      <a href="lesson6.html">Lección 6: Pronombres Demostrativos</a>
+      <a href="lesson7.html">Lección 7: Pronombres Reflexivos</a>
+      <a href="lesson8.html">Lección 8: Artículos Definidos e Indefinidos</a>
+      <p>¡Explora paso a paso lo esencial de la gramática inglesa!</p>
+    </div>
+  </header>
+<main>
+  <h2>Greetings and Basic Grammar Practice</h2>
+
+  <section>
+    <!-- Título principal (puedes conservarlo o quitarlo si quieres) -->
+<h3>Greetings</h3>
+
+<!-- Introducción con traducción al lado -->
+<div style="background-color: #eef6ff; padding: 15px; border-left: 5px solid #3498db; border-radius: 8px; margin-bottom: 20px; font-family: Arial, sans-serif;">
+  <p><strong>🔊 Click each button to listen to the pronunciation.</strong> <br>
+     (Haz clic en cada botón para escuchar la pronunciación.)</p>
+  <p><strong>⏯ Click again to pause the audio.</strong> <br>
+     (Haz clic de nuevo para pausar el audio.)</p>
+  <p><strong>▶ Only one audio plays at a time.</strong> <br>
+     (Solo un audio se reproduce a la vez.)</p>
+  <p><strong>📖 Practice as many times as you want!</strong> <br>
+     (¡Practica cuantas veces quieras!)</p>
+</div>
+    <div class="language">
+      <div class="lang-block">
+        <h4>English</h4>
+        <p>
+          Anna: <button onclick="togglePlay('audio1')">Hi, Mark!</button>
+          <audio id="audio1" src="../audio/Hi Mark .mp3"></audio>
+          Mark: <button onclick="togglePlay('audio2')">Hello Ana How are you?</button>
+          <audio id="audio2" src="../audio/Hello Anna How are y.mp3"></audio>
+          Anna: <button onclick="togglePlay('audio3')">I’m fine, thank you. And you?</button>
+          <audio id="audio3" src="../audio/I m fine thank you A (1).mp3"></audio>  
+          Mark: <button onclick="togglePlay('audio4')">I’m good, thanks. </button>
+          <audio id="audio4" src="../audio/I m good thanks .mp3"></audio> 
+          Anna: <button onclick="togglePlay('audio5')">See you later!</button>
+          <audio id="audio5" src="../audio/See you later .mp3"></audio>
+          Mark: <button onclick="togglePlay('audio6')">OK, goodbye, Anna!!</button>
+          <audio id="audio6" src="../audio/OK Goodbye Anna .mp3"></audio>
+        </p>
+      </div>
+      <div class="lang-block">
+        <h4>Español</h4>
+        <p>
+          Anna: ¡Hola, Mark!  
+          Mark: ¡Hola, Anna! ¿Cómo estás?  
+          Anna: Estoy bien, gracias. ¿Y tú?  
+          Mark: Estoy bien, gracias.  
+          Anna: ¡Nos vemos luego!  
+          Mark: OK, ¡adiós, Anna!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Introducing Yourself</h2>
+    <div class="language">
+      <div class="lang-block">
+        <h4>English</h4>
+        <p>
+        <button onclick="togglePlay('audio7')">Hello! My name is Kaiya. I am 24 years old. I am from Ecuador.  
+          I am a student at the National University of Ecuador. I live alone.  
+          I speak Spanish, and I am learning English.  
+          Thank you for listening! Nice to meet you!</button>
+          <audio id="audio7" src="../audio/2. Introducing Yourself/ElevenLabs_2025-05-29T20_10_46_Cassidy_pvc_sp100_s50_sb75_se0_b_m2.mp3"></audio>
+        </p>
+      </div>
+      <div class="lang-block">
+        <h4>Español</h4>
+        <p>
+          ¡Hola! Me llamo Kaiya. Tengo 24 años. Soy de Ecuador.  
+          Soy estudiante en la Universidad Nacional de Ecuador. Vivo solo.  
+          Hablo español y estoy aprendiendo inglés.  
+          ¡Gracias por escucharme!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. The Verb "To Be"</h2>
+    <div class="language">
+      <div class="lang-block">
+        <h4>English</h4>
+        <p>
+          <button onclick="togglePlay('audio8')">Tom: Hello! Are you a new student?
+          Lily: Yes, I am. I’m Lily.  
+          Tom: Nice to meet you, Lily. I’m Tom.  
+          Lily: Nice to meet you too, Tom.  
+          Tom: Where are you from?  
+          Lily: I’m from Ecuador. And you?  
+          Tom: I’m from Canada.  
+          Lily: Cool! Are you in English class?  
+          Tom: Yes, I am. We are classmates!</button>
+          <audio id="audio8" src="../audio/3. The Verb To Be/ElevenLabs_Untitled_Project (1).mp3"></audio>
+        </p>
+      </div>
+      <div class="lang-block">
+        <h4>Español</h4>
+        <p>
+          Tom: ¡Hola! ¿Eres una nueva estudiante?  
+          Lily: Sí. Soy Lily.  
+          Tom: Encantado de conocerte, Lily. Yo soy Tom.  
+          Lily: Igualmente, Tom.  
+          Tom: ¿De dónde eres?  
+          Lily: Soy de Ecuador. ¿Y tú?  
+          Tom: Soy de Canadá.  
+          Lily: ¡Qué bien! ¿Estás en la clase de inglés?  
+          Tom: Sí. ¡Somos compañeros de clase!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Personal Pronouns</h2>
+    <div class="language">
+      <div class="lang-block">
+        <h4>English</h4>
+        <p>
+            <button onclick="togglePlay('audio9')">Luxiel: Hello,Deya!  
+          Deya: Hi, Luxiel!  
+          Luxiel: ehhmm...Who is she?  
+          Deya: She is Mina…She is new.  
+          Luxiel: She is… different.  
+          Mina: Hi! I am Mina. I am not different. I am cool!  
+          Deya: Don’t worry. He is funny.  
+          Luxiel: I am not funny. I am smart Maybe… she is an alien  
+          Mina: No! I am from Earth. You are strange!...  
+          Deya: Stop! We are friends.  
+          Luxiel: Okay. We are friends.  
+          Mina: Look! They are my cats.  
+          Luxiel: They have glasses?!  
+          Deya: Hmmm… Maybe she is an alien…</button>
+          <audio id="audio9" src="../audio/4. Personal Pronouns/ElevenLabs_Untitled_Project (2).mp3"></audio>
+        </p>
+      </div>
+      <div class="lang-block">
+        <h4>Español</h4>
+        <p>
+          Luxiel: ¡Hola, Deya!  
+          Deya: ¡Hola, Luxiel!  
+          Luxiel: Ehhmm... ¿Quién es ella?  
+          Deya: Ella es Mina… Ella es nueva.  
+          Luxiel: Ella es… diferente.  
+          Mina: ¡Hola! Yo soy Mina. No soy diferente. ¡Soy genial!  
+          Deya: No te preocupes. Él es gracioso.  
+          Luxiel: No soy gracioso. Soy inteligente. Tal vez… ella es un alien.  
+          Mina: ¡No! Soy de la Tierra. ¡Tú eres raro!  
+          Deya: ¡Basta! Somos amigos.  
+          Luxiel: Está bien. Somos amigos.  
+          Mina: ¡Miren! Ellos son mis gatos.  
+          Luxiel: ¿Tienen gafas?  
+          Deya: Hmmm… Tal vez ella sea un alien...
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Possessive Adjectives</h2>
+    <div class="language">
+      <div class="lang-block">
+        <h4>English</h4>
+        <p>
+          <button onclick="togglePlay('audio10')">Emma: Hey, Leo! Is this your bag?  
+          Leo: No, that’s not my bag. Ask Kai.  
+          Emma: Kai, is this your bag?  
+          Kai: No, my bag is red. This is blue.  
+          Leo: Maybe it’s his bag.  
+          Emma: Who?  
+          Leo: The teacher. His bag is always blue.  
+          Kai: And look! These are their books.  
+          Emma: Oh yes, our classmates left them here.  
+          Leo: Where is our homework?  
+          Emma: In your backpack…?!  
+          Leo: Nooo! That’s your homework, not mine!.</button>
+          <audio id="audio10" src="../audio/5. Possessive Adjectives/ElevenLabs_Untitled_Project.mp3"></audio>
+        </p>
+      </div>
+      <div class="lang-block">
+        <h4>Español</h4>
+        <p>
+          Emma: ¡Hey, Leo! ¿Es esta tu mochila?  
+          Leo: No, esa no es mi mochila. Pregunta a Kai.  
+          Emma: Kai, ¿es esta tu mochila?  
+          Kai: No, mi mochila es roja. Esta es azul.  
+          Leo: Tal vez sea su mochila.  
+          Emma: ¿De quién?  
+          Leo: El profesor. Su mochila siempre es azul.  
+          Kai: ¡Y mira! Estos son sus libros.  
+          Emma: Oh sí, nuestros compañeros los dejaron aquí.  
+          Leo: ¿Dónde está nuestra tarea?  
+          Emma: ¡¿En tu mochila…?!  
+          Leo: ¡Nooo! Esa es tu tarea, ¡no la mía!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Demonstrative Pronouns</h2>
+    <div class="language">
+      <div class="lang-block">
+        <h4>English</h4>
+        <p>
+          <button onclick="togglePlay('audio11')">Luna: Hey Max, what is this?
+            Max: This is my robot!  
+          Luna: Cool! And what is that on the table?  
+          Max: That is my old phone.  
+          Luna: Wow! Look at these toys!  
+          Max: Yes! These are my brother’s toys.  
+          Tobi: And those over there?  
+          Max: Those are my dad’s tools.  
+          Luna: So many things!  
+          Max: Yes, but this robot is my favorite!</button>
+          <audio id="audio11" src="../audio/6. Demonstrative Pronouns/ElevenLabs_Untitled_Project (3).mp3"></audio>
+        </p>
+      </div>
+      <div class="lang-block">
+        <h4>Español</h4>
+        <p>
+          Luna: Hey Max, ¿qué es esto?  
+          Max: ¿Esto? ¡Este es mi robot!  
+          Luna: ¡Qué genial! ¿Y qué es eso en la mesa?  
+          Max: Ese es mi teléfono viejo.  
+          Luna: ¡Guau! ¡Mira estos juguetes!  
+          Max: ¡Sí! Estos son los juguetes de mi hermano.  
+          Tobi: ¿Y esos de allá?  
+          Max: Esos son las herramientas de mi papá.  
+          Luna: ¡Cuántas cosas!  
+          Max: ¡Sí, pero este robot es mi favorito!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Reflexive Pronouns</h2>
+    <div class="language">
+      <div class="lang-block">
+        <h4>English</h4>
+        <p>
+          <button onclick="togglePlay('audio12')">Mizzi: Hi Ivan! Did you paint this picture?
+            Ivan: Yes! I painted it myself.  
+          Lukas: Cool! I made this sandwich by myself too.  
+          Mizzi: Nice! Look, Zoe is teaching herself to dance.  
+          Ivan: Really? That’s awesome.  
+          Lukas: And the dog? Did it open the door itself again?  
+          Mizzi: Yes! It’s a smart dog.  
+          Zoe: Be careful, guys. Don’t hurt yourselves!  
+          Ivan: Don’t worry. We know how to take care of ourselves.  
+          Lukas: Yeah! We always do things by ourselves.</button>
+          <audio id="audio12" src="../audio/7. Reflexive Pronouns/ElevenLabs_Untitled_Project (4).mp3"></audio>
+        </p>
+      </div>
+      <div class="lang-block">
+        <h4>Español</h4>
+        <p>
+          Mizzi: ¡Hola, Iván! ¿Pintaste tú este cuadro?  
+          Iván: ¡Sí! Lo pinté yo mismo.  
+          Lukas: ¡Qué bien! Yo también hice este sándwich solo.  
+          Mizzi: ¡Genial! Mira, Zoe está aprendiendo a bailar sola.  
+          Iván: ¿En serio? Eso es increíble.  
+          Lukas: ¿Y el perro? ¿Volvió a abrir la puerta solo?  
+          Mizzi: ¡Sí! Es un perro muy inteligente.  
+          Zoe: ¡Tengan cuidado, chicos! ¡No se lastimen!  
+          Iván: No te preocupes. Sabemos cómo cuidarnos.  
+          Lukas: ¡Sí! Siempre hacemos las cosas por nuestra cuenta.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Definite and Indefinite Articles</h2>
+    <div class="language">
+      <div class="lang-block">
+        <h4>English</h4>
+        <p>
+         <button onclick="togglePlay('audio13')">Nico: Hey, Zoe! What is that on your desk?  
+          Zoe: It’s a robot. I built a robot for school.  
+          Mizzi: Wow! A robot? That’s amazing!  
+          Nico: Is it the project for science class?  
+          Zoe: Yes! The teacher gave us an interesting topic.  
+          Mizzi: What’s the robot’s name?  
+          Zoe: It’s called “Z-Bot.”  
+          Nico: I have an idea! Let’s build a second robot together.  
+          Mizzi: Yes! A robot army!  
+          Zoe: Let’s start after the class.</button>
+          <audio id="audio13" src="../audio/8. Definite and Indefinite Articles/ElevenLabs_Untitled_Project (5).mp3"></audio>
+        </p>
+      </div>
+      <div class="lang-block">
+        <h4>Español</h4>
+        <p>
+          Nico: ¡Oye, Zoe! ¿Qué es eso en tu escritorio?  
+          Zoe: Es un robot. Construí un robot para la escuela.  
+          Mizzi: ¡Wow! ¿Un robot? ¡Eso es increíble!  
+          Nico: ¿Es el proyecto para la clase de ciencias?  
+          Zoe: ¡Sí! La profesora nos dio un tema interesante.  
+          Mizzi: ¿Cómo se llama el robot?  
+          Zoe: Se llama “Z-Bot”.  
+          Nico: ¡Tengo una idea! Construyamos un segundo robot juntos.  
+          Mizzi: ¡Sí! ¡Un ejército de robots!  
+          Zoe: Empecemos después de clase
+        </p>
+      </div>
+    </div>
+
+
+
+<script>
+  let currentAudio = null;
+
+  function togglePlay(id) {
+    const audio = document.getElementById(id);
+
+    if (currentAudio && currentAudio !== audio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    }
+
+    if (audio.paused) {
+      audio.play();
+      currentAudio = audio;
+    } else {
+      audio.pause();
+      currentAudio = null;
+    }
+  }
+</script>
+
+
+
+
+  </section>
+
+</main>
+  <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inicio de sesión AlexDev</title>
+  <link rel="stylesheet" href="../paginas/inicio.css" />
+</head>
+<body>
+  <div class="ring">
+    <i style="--clr:#b19cd9;"></i>
+    <i style="--clr:#a684c5;"></i>
+    <i style="--clr:#5a3e8a;"></i>
+    <div class="login">
+      <h2>Iniciar sesión</h2>
+      <form id="loginForm">
+        <div class="inputBx">
+          <input type="email" id="email" placeholder="Correo electrónico" required />
+        </div>
+        <div class="inputBx">
+          <input type="password" id="password" placeholder="Contraseña" required />
+        </div>
+        <div class="inputBx">
+          <input type="submit" value="Iniciar sesión" />
+        </div>
+      </form>
+      <div class="extra-buttons">
+        <button onclick="window.location.href='registro.html'">Crear cuenta</button>
+        <button onclick="window.location.href='index.html'">Entrar sin cuenta</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAksJNLn61IYZxg9-p0wfSZG5UFm5edQ-A",
+      authDomain: "mi-login-app-ddfb4.firebaseapp.com",
+      projectId: "mi-login-app-ddfb4",
+      storageBucket: "mi-login-app-ddfb4.appspot.com",
+      messagingSenderId: "726872992756",
+      appId: "1:726872992756:web:37be9522df5184c4aca7a1",
+      measurementId: "G-VRB0FZFMSQ"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+
+      try {
+        await signInWithEmailAndPassword(auth, email, password);
+        window.location.href = 'index.html';
+      } catch (error) {
+        alert('Error: ' + error.message);
+      }
+    });
+  </script>
+</body>
+</html>
+
+

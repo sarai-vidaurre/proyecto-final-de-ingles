@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Practice English Speaking</title>
+  <link rel="stylesheet" href="practice.css" />
+</head>
+<body>
+
+    <header>
+    <h1>Talky Talky</h1>
+        <h1>Practice English Speaking</h1>
+    <nav class="nav-links">
+      <button onclick="toggleLessons()">Gramática</button>
+      <a href="index.html"><button>Menú</button></a>
+    </nav>
+    <div id="lessonsDropdown" class="dropdown" style="display: none;">
+      <h3>Gramática - Temas</h3>
+      <a href="lesson1.html">Lección 1: Saludos y Despedidas</a>
+      <a href="lesson2.html">Lección 2: Presentarte</a>
+      <a href="lesson3.html">Lección 3: El Verbo "To Be"</a>
+      <a href="lesson4.html">Lección 4: Pronombres Personales</a>
+      <a href="lesson5.html">Lección 5: Adjetivos Posesivos</a>
+      <a href="lesson6.html">Lección 6: Pronombres Demostrativos</a>
+      <a href="lesson7.html">Lección 7: Pronombres Reflexivos</a>
+      <a href="lesson8.html">Lección 8: Artículos Definidos e Indefinidos</a>
+      <p>¡Explora paso a paso lo esencial de la gramática inglesa!</p>
+    </div>
+  </header>
+
+  <section class="phrases-list">
+    <h2>Select a phrase to practice / Selecciona una frase para practicar</h2>
+    <div id="phraseButtons"></div>
+  </section>
+
+  <section class="practice-area">
+    <h2>Phrase to practice / Frase para practicar:</h2>
+    <p id="currentPhrase" class="current-phrase">-- Select a phrase -- (Selecciona una frase)</p>
+    <button id="playAudio" class="play-btn" disabled>▶ Play phrase (Reproducir frase)</button>
+    <button id="micBtn" disabled>🎤 Start Speaking (Hablar)</button>
+    <p id="listeningStatus"></p>
+    <p id="spokenText"></p>
+    <p id="feedback"></p>
+  </section>
+
+  <script src="practice.js"></script>
+    <script>
+    function toggleLessons() {
+      const dropdown = document.getElementById("lessonsDropdown");
+      dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+    }
+  </script>
+    <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+</body>
+</html>

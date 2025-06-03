@@ -1,0 +1,225 @@
+:root {
+  --primary: #b19cd9;
+  --secondary: #f3f0fa;
+  --text-dark: #333;
+  --text-light: #fff;
+  --border: #d3cce3;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--secondary);
+  color: var(--text-dark);
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 0rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b19cd9;
+  padding: 0rem 30rem;
+  border-bottom: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #9b87cb;
+}
+
+#suggestion {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--secondary);
+  border-left: 4px solid var(--primary);
+  border-radius: 5px;
+}
+#lessonsDropdown {
+  background-color: white;
+  color: #333;
+  width: 300px;
+  margin: 1rem auto; /* Centrado horizontal */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none; /* Se muestra solo al hacer clic */
+  text-align: left;
+}
+
+
+nav button {
+  background: none;
+  border: none;
+  color: white; /* letras blancas */
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+nav button:hover {
+  text-decoration: underline;
+}
+
+
+#lessonsDropdown a {
+  display: block;
+  color: var(--primary);
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#lessonsDropdown a:hover {
+  color: #8a73c9; /* tono más claro al pasar el mouse */
+  text-decoration: underline;
+}
+
+#lessonsDropdown h3 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #b19cd9;
+  color: white;
+  text-align: center;
+  padding: 0.1rem;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+h1 {
+  margin: 0;
+  font-size: 1em;
+}
+h2 {
+  color: var(--primary);
+}
+
+
+p {
+  margin-top: 5px;
+  font-size: 1em;
+}
+
+.phrases-list {
+  padding: 20px;
+  border-bottom: 1px solid #fbdff5;
+  background-color: #ffffff;
+}
+
+#phraseButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.phrase-btn {
+  background-color: #ab78d4;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.phrase-btn:hover, .phrase-btn.selected {
+  background-color: #6e0ec7;
+}
+
+.practice-area {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+#playAudio, #micBtn {
+  background-color: #ab78d4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: background-color 0.3s;
+}
+
+#playAudio:disabled, #micBtn:disabled {
+  background-color: #7f8fa6;
+  cursor: not-allowed;
+}
+
+#playAudio:hover:not(:disabled), #micBtn:hover:not(:disabled) {
+  background-color: #6e0ec7;
+}
+
+#listeningStatus {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #e84118;
+}
+
+#spokenText {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 1.2em;
+  min-height: 1.5em;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}

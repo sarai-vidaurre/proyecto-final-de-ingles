@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 2: Introducing Yourself</title>
+  <link rel="stylesheet" href="lesson2.css" />
+</head>
+<body>
+  <header>
+    <h1>Talky Talky</h1>
+    <nav class="nav-links">
+      <button onclick="toggleLessons()">Gramática</button>
+      <a href="index.html"><button>Menú</button></a>
+    </nav>
+
+    <div id="lessonsDropdown" class="dropdown" style="display: none;">
+      <h3>Gramática - Temas</h3>
+      <a href="lesson1.html">Lección 1: Saludos y Despedidas</a>
+      <a href="lesson2.html">Lección 2: Presentarte</a>
+      <a href="lesson3.html">Lección 3: El Verbo "To Be"</a>
+      <a href="lesson4.html">Lección 4: Pronombres Personales</a>
+      <a href="lesson5.html">Lección 5: Adjetivos Posesivos</a>
+      <a href="lesson6.html">Lección 6: Pronombres Demostrativos</a>
+      <a href="lesson7.html">Lección 7: Pronombres Reflexivos</a>
+      <a href="lesson8.html">Lección 8: Artículos Definidos e Indefinidos</a>
+      <p>¡Explora paso a paso lo esencial de la gramática inglesa!</p>
+    </div>
+  </header>
+
+  <main class="lesson-content">
+    <section>
+      <h2>Lesson 2: Introducing Yourself</h2>
+      <h2>Lección 2: Presentarte</h2>
+
+      <p><strong>How to introduce yourself in English</strong></p>
+      <p><em>Cómo presentarte en inglés</em></p>
+      <p>We introduce ourselves by saying our name, where we are from, our age, and other personal info.</p>
+      <p>Nos presentamos diciendo nuestro nombre, de dónde somos, nuestra edad y otra información personal.</p>
+
+      <h2>Useful phrases:</h2>
+      <ul>
+        <li>My name is Laura. → Me llamo Laura.</li>
+        <li>I’m from Argentina. → Soy de Argentina.</li>
+        <li>I’m 25 years old. → Tengo 25 años.</li>
+        <li>What’s your name? → ¿Cómo te llamas?</li>
+        <li>Where are you from? → ¿De dónde eres?</li>
+        <li>Nice to meet you. → Encantado/a de conocerte.</li>
+      </ul>
+    </section>
+
+    <section class="practice-section">
+      <h2>🧠 Practice Activity: Actividad Práctica</h2>
+      <p><strong>Write your introduction:</strong></p>
+      <form id="intro-form">
+        <label for="name">My name is</label>
+        <input type="text" id="name" required />
+
+        <label for="country">I’m from</label>
+        <input type="text" id="country" required />
+
+        <label for="age">I’m</label>
+        <input type="number" id="age" required /> years old
+
+        <button type="submit">Aceptar</button>
+      </form>
+
+      <div id="result" class="result-box"></div>
+    </section>
+  </main>
+
+
+  <script src="lesson2.js"></script>
+  <script>
+    function toggleLessons() {
+      const dropdown = document.getElementById("lessonsDropdown");
+      dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+    }
+  </script>
+    <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: sans-serif;
+  }
+  
+  .control-panel {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(50, 50, 50, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 100;
+  }
+  
+  #screensaver-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .flying-object {
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    font-size: 40px;
+    animation: fly 6s linear forwards;
+    opacity: 0.8;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translateX(0) rotate(0deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(110vw) rotate(360deg);
+      opacity: 0;
+    }
+  }

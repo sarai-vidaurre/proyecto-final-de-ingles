@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 5 - Possessive Adjectives</title>
+  <link rel="stylesheet" href="lesson5.css">
+</head>
+<body>
+  <header>
+    <h1>Talky Talky</h1>
+    <nav class="nav-links">
+      <button onclick="toggleLessons()">Gramática</button>
+      <a href="index.html"><button>Menú</button></a>
+    </nav>
+    <div id="lessonsDropdown" class="dropdown" style="display: none;">
+      <h3>Gramática - Temas</h3>
+      <a href="lesson1.html">Lección 1: Saludos y Despedidas</a>
+      <a href="lesson2.html">Lección 2: Presentarte</a>
+      <a href="lesson3.html">Lección 3: El Verbo "To Be" (Ser/Estar)</a>
+      <a href="lesson4.html">Lección 4: Pronombres Personales</a>
+      <a href="lesson5.html">Lección 5: Adjetivos Posesivos</a>
+      <a href="lesson6.html">Lección 6: Pronombres Demostrativos</a>
+      <a href="lesson7.html">Lección 7: Pronombres Reflexivos</a>
+      <a href="lesson8.html">Lección 8: Artículos Definidos e Indefinidos</a>
+      <p>¡Explora paso a paso lo esencial de la gramática inglesa!</p>
+    </div>
+  </header>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+<main>
+    <section class="lesson">
+      <h2>Lesson 5: Possessive Adjectives<br>Lección 5: Adjetivos Posesivos</h2>
+      <p><strong>What are possessive adjectives?</strong><br><em>¿Qué son los adjetivos posesivos?</em><br>
+      They show ownership or relationship. They are placed before a noun to indicate to whom something belongs.<br>
+      <em>Indican posesión o relación. Se colocan antes de un sustantivo para señalar a quién pertenece algo.</em></p>
+    </section>
+
+    <h3>List of Possessive Adjectives:</h3>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Pronoun</th><th>Possessive</th><th>Example</th><th>Traducción</th>
+      </tr>
+      <tr><td>I</td><td>my</td><td>My book is red</td><td>Mi libro es rojo</td></tr>
+      <tr><td>You</td><td>your</td><td>Your house is big</td><td>Tu casa es grande</td></tr>
+      <tr><td>He</td><td>his</td><td>His car is fast</td><td>Su auto es rápido</td></tr>
+      <tr><td>She</td><td>her</td><td>Her bag is blue</td><td>Su bolso es azul</td></tr>
+      <tr><td>It</td><td>its</td><td>Its name is Fluffy</td><td>Su nombre es Fluffy (de un animal)</td></tr>
+      <tr><td>We</td><td>our</td><td>Our team is strong</td><td>Nuestro equipo es fuerte</td></tr>
+      <tr><td>They</td><td>their</td><td>Their shoes are new</td><td>Sus zapatos son nuevos</td></tr>
+    </table>
+
+    <section class="highlight-box">
+      <h3>More Examples:</h3>
+      <ul>
+        <li>This is <strong>my</strong> phone. — Este es <strong>mi</strong> teléfono.</li>
+        <li>Is that <strong>your</strong> backpack? — ¿Esa es <strong>tu</strong> mochila?</li>
+        <li><strong>Her</strong> hair is long. — <strong>Su</strong> cabello es largo.</li>
+        <li>We love <strong>our</strong> city. — Amamos <strong>nuestra</strong> ciudad.</li>
+        <li>They lost <strong>their</strong> keys. — Perdieron <strong>sus</strong> llaves.</li>
+      </ul>
+    </section>
+
+    <h3>Practice Activity:</h3>
+    <form id="practice-form">
+      <p>Complete with the correct possessive adjective:</p>
+      <p>1. ___ name is Carla. <input type="text" class="possessive" data-answer="her"></p>
+      <p>2. They love ___ dog. <input type="text" class="possessive" data-answer="their"></p>
+      <p>3. We play with ___ friends. <input type="text" class="possessive" data-answer="our"></p>
+      <p>4. I forgot ___ keys. <input type="text" class="possessive" data-answer="my"></p>
+      <p>5. He drives ___ car every day. <input type="text" class="possessive" data-answer="his"></p>
+      <button type="submit">Check Answers</button>
+    </form>
+
+    <div id="feedback"></div>
+  </main>
+
+
+
+
+  <script src="../paginas/lesson5.js"></script>
+
+
+  <script>
+  function toggleLessons() {
+    const dropdown = document.getElementById("lessonsDropdown");
+    dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+  }
+</script>
+  <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+</body>
+</html>

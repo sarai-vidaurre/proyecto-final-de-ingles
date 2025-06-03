@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 6: Demonstrative Pronouns</title>
+  <link rel="stylesheet" href="lesson6.css" />
+</head>
+<body>
+  <header>
+    <h1>Talky Talky</h1>
+    <nav class="nav-links">
+      <button onclick="toggleLessons()">Gramática</button>
+      <a href="index.html"><button>Menú</button></a>
+    </nav>
+
+    <div id="lessonsDropdown" class="dropdown" style="display: none;">
+      <h3>Gramática - Temas</h3>
+      <a href="lesson1.html">Lección 1: Saludos y Despedidas</a>
+      <a href="lesson2.html">Lección 2: Presentarte</a>
+      <a href="lesson3.html">Lección 3: El Verbo "To Be"</a>
+      <a href="lesson4.html">Lección 4: Pronombres Personales</a>
+      <a href="lesson5.html">Lección 5: Adjetivos Posesivos</a>
+      <a href="lesson6.html">Lección 6: Pronombres Demostrativos</a>
+      <a href="lesson7.html">Lección 7: Pronombres Reflexivos</a>
+      <a href="lesson8.html">Lección 8: Artículos Definidos e Indefinidos</a>
+      <p>¡Explora paso a paso lo esencial de la gramática inglesa!</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="lesson">
+      <h2>Lesson 6: Demonstrative Pronouns<br>Lección 6: Pronombres Demostrativos</h2>
+      <p><strong>What are demonstratives?</strong><br><em>¿Qué son los pronombres demostrativos?</em><br>
+      They show where something is in relation to the speaker.<br>
+      <em>Indican la ubicación de algo respecto al hablante.</em></p>
+
+      <table>
+        <tr>
+          <th>English</th><th>Spanish</th><th>Use</th>
+        </tr>
+        <tr>
+          <td>This</td><td>Este/Esta</td><td>Singular, cerca</td>
+        </tr>
+        <tr>
+          <td>That</td><td>Ese/Esa</td><td>Singular, lejos</td>
+        </tr>
+        <tr>
+          <td>These</td><td>Estos/Estas</td><td>Plural, cerca</td>
+        </tr>
+        <tr>
+          <td>Those</td><td>Esos/Esas</td><td>Plural, lejos</td>
+        </tr>
+      </table>
+
+      <p><strong>Examples:</strong><br><em>Ejemplos:</em></p>
+      <ul>
+        <li>This is my pen → Esta es mi pluma</li>
+        <li>That is your book → Ese es tu libro</li>
+        <li>These are my friends → Estos son mis amigos</li>
+        <li>Those are apples → Esas son manzanas</li>
+      </ul>
+    </section>
+
+<section class="activity">
+  <h3>🧠 Practice Activity:<br>Actividad Práctica:</h3>
+  <p><strong>Opción recomendada:</strong> Selecciona el pronombre correcto con ayuda visual o textual.</p>
+
+  <form id="demo-activity">
+
+    <div class="question">
+      <p>📍 "_ ___ is my dog." <br><em>(El perro está cerca de mí)</em></p>
+      <img src="../imagenes/perro-cerca.jpg" alt="Perro cerca" class="img-question">
+      <select name="q1" required>
+        <option value="">Selecciona una opción</option>
+        <option value="this">this</option>
+        <option value="that">that</option>
+        <option value="these">these</option>
+        <option value="those">those</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <p>1. ___ is my cat. <br><em>(El gato está lejos de mí)</em></p>
+      <img src="../imagenes/gato-lejos.jpg" alt="Gato lejos" class="img-question">
+      <select name="q2" required>
+        <option value="">Selecciona una opción</option>
+        <option value="this">this</option>
+        <option value="that">that</option>
+        <option value="these">these</option>
+        <option value="those">those</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <p>2. ___ are my shoes. <br><em>(Los zapatos están cerca de mí)</em></p>
+      <img src="../imagenes/zapatos-cerca.jpg" alt="Zapatos cerca" class="img-question">
+      <select name="q3" required>
+        <option value="">Selecciona una opción</option>
+        <option value="this">this</option>
+        <option value="that">that</option>
+        <option value="these">these</option>
+        <option value="those">those</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <p>3. ___ are my friends. <br><em>(Los amigos están lejos)</em></p>
+      <img src="../imagenes/amigos-lejos.jpg" alt="Amigos lejos" class="img-question">
+      <select name="q4" required>
+        <option value="">Selecciona una opción</option>
+        <option value="this">this</option>
+        <option value="that">that</option>
+        <option value="these">these</option>
+        <option value="those">those</option>
+      </select>
+    </div>
+
+    <br>
+    <button type="submit">Enviar</button>
+    <div id="feedback"></div>
+  </form>
+</section>
+  </main>
+
+  <script src="lesson6.js"></script>
+  <script>
+    function toggleLessons() {
+      const dropdown = document.getElementById("lessonsDropdown");
+      dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+    }
+  </script>
+    <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 7: Reflexive Pronouns</title>
+  <link rel="stylesheet" href="lesson6.css" />
+</head>
+<body>
+  <header>
+    <h1>Talky Talky</h1>
+    <nav class="nav-links">
+      <button onclick="toggleLessons()">Gramática</button>
+      <a href="index.html"><button>Menú</button></a>
+    </nav>
+    <div id="lessonsDropdown" class="dropdown" style="display: none;">
+      <h3>Gramática - Temas</h3>
+      <a href="lesson1.html">Lección 1: Saludos y Despedidas</a>
+      <a href="lesson2.html">Lección 2: Presentarte</a>
+      <a href="lesson3.html">Lección 3: El Verbo "To Be"</a>
+      <a href="lesson4.html">Lección 4: Pronombres Personales</a>
+      <a href="lesson5.html">Lección 5: Adjetivos Posesivos</a>
+      <a href="lesson6.html">Lección 6: Pronombres Demostrativos</a>
+      <a href="lesson7.html">Lección 7: Pronombres Reflexivos</a>
+      <a href="lesson8.html">Lección 8: Artículos Definidos e Indefinidos</a>
+      <p>¡Explora paso a paso lo esencial de la gramática inglesa!</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="lesson">
+      <h2>Lesson 7: Reflexive Pronouns<br>Lección 7: Pronombres Reflexivos</h2>
+      <p><strong>What are reflexive pronouns?</strong><br><em>¿Qué son los pronombres reflexivos?</em><br>
+      They refer back to the subject of the sentence.<br>
+      <em>Se refieren al sujeto de la oración.</em></p>
+
+      <table>
+        <tr>
+          <th>Subject</th><th>Reflexive Pronoun</th><th>Traducción</th>
+        </tr>
+        <tr><td>I</td><td>myself</td><td>yo mismo/a</td></tr>
+        <tr><td>you</td><td>yourself</td><td>tú mismo/a</td></tr>
+        <tr><td>he</td><td>himself</td><td>él mismo</td></tr>
+        <tr><td>she</td><td>herself</td><td>ella misma</td></tr>
+        <tr><td>it</td><td>itself</td><td>ello mismo</td></tr>
+        <tr><td>we</td><td>ourselves</td><td>nosotros mismos/as</td></tr>
+        <tr><td>you (plural)</td><td>yourselves</td><td>ustedes mismos/as</td></tr>
+        <tr><td>they</td><td>themselves</td><td>ellos/as mismos/as</td></tr>
+      </table>
+
+      <p><strong>Examples:</strong><br><em>Ejemplos:</em></p>
+      <ul>
+        <li>I made it myself → Lo hice yo mismo</li>
+        <li>She cut herself → Ella se cortó</li>
+        <li>We taught ourselves English → Nosotros aprendimos inglés por nuestra cuenta</li>
+        <li>They blamed themselves → Ellos se culparon</li>
+      </ul>
+    </section>
+
+    <section class="activity">
+      <h3>🧠 Practice Activity:<br>Actividad Práctica:</h3>
+      <p><strong>Opción recomendada:</strong> Selecciona el pronombre reflexivo correcto para cada oración.</p>
+      <form id="demo-activity">
+
+        <div class="question">
+          <p>📍 "I looked at ___ in the mirror."</p>
+          <img src="img/lesson7/espejo.jpg" alt="Mirando al espejo" class="img-question">
+          <select name="q1" required>
+            <option value="">Selecciona una opción</option>
+            <option value="myself">myself</option>
+            <option value="herself">herself</option>
+            <option value="yourself">yourself</option>
+            <option value="ourselves">ourselves</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>1. "He hurt ___ while playing football."</p>
+          <img src="img/lesson7/futbol.jpg" alt="Jugando fútbol" class="img-question">
+          <select name="q2" required>
+            <option value="">Selecciona una opción</option>
+            <option value="himself">himself</option>
+            <option value="myself">myself</option>
+            <option value="themselves">themselves</option>
+            <option value="herself">herself</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>2. "We prepared the food by ___."</p>
+          <img src="img/lesson7/comida.jpg" alt="Preparando comida" class="img-question">
+          <select name="q3" required>
+            <option value="">Selecciona una opción</option>
+            <option value="ourselves">ourselves</option>
+            <option value="myself">myself</option>
+            <option value="himself">himself</option>
+            <option value="yourself">yourself</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>3. "Did you do it all by ___?"</p>
+          <img src="img/lesson7/solo.jpg" alt="Hacer algo solo" class="img-question">
+          <select name="q4" required>
+            <option value="">Selecciona una opción</option>
+            <option value="yourself">yourself</option>
+            <option value="herself">herself</option>
+            <option value="ourselves">ourselves</option>
+            <option value="themselves">themselves</option>
+          </select>
+        </div>
+
+        <br>
+        <button type="submit">Enviar</button>
+        <div id="feedback"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="lesson7.js"></script>
+  <script>
+    function toggleLessons() {
+      const dropdown = document.getElementById("lessonsDropdown");
+      dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+    }
+  </script>
+    <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+</body>
+</html>

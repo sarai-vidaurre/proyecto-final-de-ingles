@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson 8: Definite and Indefinite Articles</title>
+  <link rel="stylesheet" href="lesson6.css" />
+</head>
+<body>
+  <header>
+    <h1>Talky Talky</h1>
+    <nav class="nav-links">
+      <button onclick="toggleLessons()">Gramática</button>
+      <a href="index.html"><button>Menú</button></a>
+    </nav>
+    <div id="lessonsDropdown" class="dropdown" style="display: none;">
+      <h3>Gramática - Temas</h3>
+      <a href="lesson1.html">Lección 1: Saludos y Despedidas</a>
+      <a href="lesson2.html">Lección 2: Presentarte</a>
+      <a href="lesson3.html">Lección 3: El Verbo "To Be"</a>
+      <a href="lesson4.html">Lección 4: Pronombres Personales</a>
+      <a href="lesson5.html">Lección 5: Adjetivos Posesivos</a>
+      <a href="lesson6.html">Lección 6: Pronombres Demostrativos</a>
+      <a href="lesson7.html">Lección 7: Pronombres Reflexivos</a>
+      <a href="lesson8.html">Lección 8: Artículos Definidos e Indefinidos</a>
+      <p>¡Explora paso a paso lo esencial de la gramática inglesa!</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="lesson">
+      <h2>Lesson 8: Definite and Indefinite Articles<br>Lección 8: Artículos Definidos e Indefinidos</h2>
+
+      <p><strong>What are articles?</strong><br><em>¿Qué son los artículos?</em><br>
+      They go before a noun to define if something is specific or not.<br>
+      <em>Van antes de un sustantivo para definir si algo es específico o no.</em></p>
+
+      <h3>Types of Articles:</h3>
+      <ul>
+        <li><strong>The</strong> → <em>definite article</em> (el, la, los, las)</li>
+        <li><strong>A / An</strong> → <em>indefinite articles</em> (un, una)</li>
+      </ul>
+
+      <h3>Rules:</h3>
+      <ul>
+        <li>Use <strong>a</strong> before consonant sounds → <em>a car, a dog</em></li>
+        <li>Use <strong>an</strong> before vowel sounds → <em>an apple, an hour</em></li>
+      </ul>
+
+      <h3>Examples:</h3>
+      <ul>
+        <li>I saw <strong>a</strong> bird → Vi un pájaro</li>
+        <li>She has <strong>an</strong> idea → Ella tiene una idea</li>
+        <li><strong>The</strong> book is on the table → El libro está sobre la mesa</li>
+        <li>He bought <strong>an</strong> umbrella → Él compró un paraguas</li>
+        <li><strong>The</strong> moon looks beautiful → La luna se ve hermosa</li>
+      </ul>
+    </section>
+
+    <section class="activity">
+      <h3>🧠 Practice Activity:<br>Actividad Práctica:</h3>
+      <p><strong>Completa las oraciones con <em>a</em>, <em>an</em> o <em>the</em>:</strong></p>
+
+      <form id="article-activity">
+        <div class="question">
+          <p>1. I need ___ umbrella.</p>
+          <select name="q1" required>
+            <option value="">Selecciona una opción</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>2. ___ sun is bright today.</p>
+          <select name="q2" required>
+            <option value="">Selecciona una opción</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>3. He wants ___ orange.</p>
+          <select name="q3" required>
+            <option value="">Selecciona una opción</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>4. She saw ___ elephant at the zoo.</p>
+          <select name="q4" required>
+            <option value="">Selecciona una opción</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>5. They visited ___ Eiffel Tower in Paris.</p>
+          <select name="q5" required>
+            <option value="">Selecciona una opción</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+          </select>
+        </div>
+
+        <div class="question">
+          <p>6. I saw ___ cat in the garden.</p>
+          <select name="q6" required>
+            <option value="">Selecciona una opción</option>
+            <option value="a">a</option>
+            <option value="an">an</option>
+            <option value="the">the</option>
+          </select>
+        </div>
+
+        <br>
+        <button type="submit">Enviar</button>
+        <div id="feedback"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="lesson8.js"></script>
+  <script>
+    function toggleLessons() {
+      const dropdown = document.getElementById("lessonsDropdown");
+      dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+    }
+  </script>
+    <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+</body>
+</html>

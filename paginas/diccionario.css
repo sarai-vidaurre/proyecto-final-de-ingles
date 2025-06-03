@@ -1,0 +1,98 @@
+.diccionario-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#busqueda {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #b19cd9;
+  border-radius: 8px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.diccionario-cuadro {
+  background-color: #ffffff;
+  border: 2px solid #b19cd9;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.diccionario-cuadro img {
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.diccionario-cuadro h3 {
+  font-size: 1.5rem;
+  color: #4b2e83;
+}
+
+.diccionario-cuadro p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.botones-navegacion {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.botones-navegacion button {
+  background-color: #b19cd9;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botones-navegacion button:hover {
+  background-color: #a684c5;
+}
+
+
+/* Animación de deslizamiento */
+.diccionario-cuadro {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.deslizar-salida-izquierda {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.deslizar-salida-derecha {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.deslizar-entrada-izquierda {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.deslizar-entrada-derecha {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+

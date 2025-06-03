@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 4: Pronombres Personales</title>
+  <link rel="stylesheet" href="lesson4.css">
+</head>
+<body>
+ <header>
+  <h1>Talky Talky</h1>
+  <nav class="nav-links">
+    <button onclick="toggleLessons()">Gramática</button>
+    <a href="index.html"><button>Menú</button></a>
+  </nav>
+
+  <div id="lessonsDropdown" class="dropdown" style="display: none;">
+    <h3>Gramática - Temas</h3>
+    <a href="lesson1.html">Lección 1: Saludos y Despedidas</a>
+    <a href="lesson2.html">Lección 2: Presentarte</a>
+    <a href="lesson3.html">Lección 3: El Verbo "To Be" (Ser/Estar)</a>
+    <a href="lesson4.html">Lección 4: Pronombres Personales</a>
+    <a href="lesson5.html">Lección 5: Adjetivos Posesivos</a>
+    <a href="lesson6.html">Lección 6: Pronombres Demostrativos</a>
+    <a href="lesson7.html">Lección 7: Pronombres Reflexivos</a>
+    <a href="lesson8.html">Lección 8: Artículos Definidos e Indefinidos</a>
+    <p>¡Explora paso a paso lo esencial de la gramática inglesa!</p>
+  </div>
+</header>
+ <main>
+    <section class="lesson">
+      <h2>Lesson 4: Personal Pronouns<br>Lección 4: Pronombres Personales</h2>
+      <p><strong>What are personal pronouns?</strong><br><em>¿Qué son los pronombres personales?</em><br>
+      They are words used to replace names and avoid repetition. In English, they are:<br>
+      <em>Son palabras que se usan para reemplazar nombres y evitar la repetición. En inglés, son:</em></p><table>
+    <tr><th>Pronoun</th><th>Traducción</th></tr>
+    <tr><td>I</td><td>Yo</td></tr>
+    <tr><td>You</td><td>Tú / Usted</td></tr>
+    <tr><td>He</td><td>Él</td></tr>
+    <tr><td>She</td><td>Ella</td></tr>
+    <tr><td>It</td><td>Eso / Ello</td></tr>
+    <tr><td>We</td><td>Nosotros/as</td></tr>
+    <tr><td>They</td><td>Ellos/as</td></tr>
+  </table>
+
+  <p><strong>Examples:</strong><br><em>Ejemplos:</em></p>
+  <ul>
+    <li>I am Renzo. → Yo soy Renzo.</li>
+    <li>She is my friend. → Ella es mi amiga.</li>
+    <li>We are happy. → Nosotros estamos felices.</li>
+  </ul>
+</section>
+
+<section class="activity">
+  <h3>🧠 Practice Activity:<br>Actividad Práctica:</h3>
+  <p><strong>Objective:</strong> Select the correct personal pronoun for each sentence.<br><em>Objetivo:</em> Selecciona el pronombre personal correcto para cada oración.</p>
+
+  <form id="pronoun-quiz">
+    <p>1. ___ am a student.</p>
+    <select class="question">
+      <option value="">Selecciona una opción</option>
+      <option value="I">I</option>
+      <option value="She">She</option>
+      <option value="They">They</option>
+    </select>
+
+    <p>2. ___ is my friend.</p>
+    <select class="question">
+      <option value="">Selecciona una opción</option>
+      <option value="He">He</option>
+      <option value="We">We</option>
+      <option value="I">I</option>
+    </select>
+
+    <p>3. ___ are playing soccer.</p>
+    <select class="question">
+      <option value="">Selecciona una opción</option>
+      <option value="It">It</option>
+      <option value="They">They</option>
+      <option value="He">He</option>
+    </select>
+
+    <br><br>
+    <button type="submit">Aceptar</button>
+    <div id="feedback"></div>
+  </form>
+</section>
+
+  </main>
+    
+   <script src="lesson4.js"></script>
+
+
+
+
+<script>
+  function toggleLessons() {
+    const dropdown = document.getElementById("lessonsDropdown");
+    dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+  <footer class="footer">
+    <p>© 2025 Aprende Inglés Básico. Todos los derechos reservados.</p>
+    <p>Contacto: <a href="mailto:contacto@inglesfacil.com">molinanaviarenzo@gmail.com</a></p>
+  </footer>
+</body>
+</html>
