@@ -15,4 +15,4 @@ nuestro proyecto consite en una pagina web amigable para aprender ingles, nuestr
 
 
 
-#Dicho proyectod debe ser ejecutado en Visual Studio Code
+#Este proyecto debe ser ejecutado en Visual Studio Code
