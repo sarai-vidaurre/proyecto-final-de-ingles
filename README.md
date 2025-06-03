@@ -10,8 +10,7 @@ Integrantes:
 •	Armando Ariel Dávila Fajardo
 
 
-#En que consiste nuestro proyecto
-nuestro proyecto consite en una pagina web amigable para aprender ingles, nuestra pagina web es amigable e intuitiva para los usuarios
+#En que consiste nuestro proyecto consite en una pagina web amigable para aprender ingles, nuestra pagina web es amigable e intuitiva para los usuarios
 
 
 
